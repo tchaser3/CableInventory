@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EventLogResultsDataSet" targetNamespace="http://tempuri.org/EventLogResultsDataSet.xsd" xmlns:mstns="http://tempuri.org/EventLogResultsDataSet.xsd" xmlns="http://tempuri.org/EventLogResultsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EventLogResultsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="EventLogResultsDataSet" msprop:Generator_UserDSName="EventLogResultsDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="eventlog" msprop:Generator_TableClassName="eventlogDataTable" msprop:Generator_TableVarName="tableeventlog" msprop:Generator_TablePropName="eventlog" msprop:Generator_RowDeletingName="eventlogRowDeleting" msprop:Generator_RowChangingName="eventlogRowChanging" msprop:Generator_RowEvHandlerName="eventlogRowChangeEventHandler" msprop:Generator_RowDeletedName="eventlogRowDeleted" msprop:Generator_UserTableName="eventlog" msprop:Generator_RowChangedName="eventlogRowChanged" msprop:Generator_RowEvArgName="eventlogRowChangeEvent" msprop:Generator_RowClassName="eventlogRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TransactionID" msprop:Generator_ColumnVarNameInTable="columnTransactionID" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_UserColumnName="TransactionID" type="xs:string" />
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:dateTime" />
+              <xs:element name="Entry" msprop:Generator_ColumnVarNameInTable="columnEntry" msprop:Generator_ColumnPropNameInRow="Entry" msprop:Generator_ColumnPropNameInTable="EntryColumn" msprop:Generator_UserColumnName="Entry" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:eventlog" />
+      <xs:field xpath="mstns:TransactionID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
